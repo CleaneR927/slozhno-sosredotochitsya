@@ -122,7 +122,7 @@
 @media (max-width: 768px) {
 
   .header__title {
-    margin-block-end: 162px;
+    margin-block-end: clamp(55px, -2.9437rem + 27.2265vw, 162px);
   }
 }
 
@@ -130,13 +130,13 @@
 
   .header__title {
     margin-inline-start: 10px;
-    margin-block-end: 56px;
   }
 }
 
 .header__text {
   justify-self: end;
   inline-size: var(--header-container-text-size);
+  block-size: fit-content;
   margin-inline-end: var(--body-content-margin);
   margin-block-end: 135px;
   font-weight: bold;
@@ -146,7 +146,7 @@
 @media (max-width: 768px) {
 
   .header__text {
-    margin-block-end: 183px;
+    /* margin-block-end: 183px; */
   }
 }
 
