@@ -2,3 +2,56 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --font-size-header-footer-title: clamp(
+    7.5rem,
+    0.5625rem + 14.4531vw,
+    9.8125rem
+  );
+  --body-content-margin: 20px;
+  --section-content-margin-bottom: 80px;
+  --section-images-margin-bottom: 60px;
+  --footer-content-margin: 319px;
+  --header-nav-margin-bottom: clamp(173px, -7.9375rem + 39.0625vw, 273px);
+  --header-container-text-size: clamp(364px, -1.0625rem + 49.6094vw, 491px);
+  --header-title-color: #db00ff;
+  --footer-title-color: #db00ff;
+  --text-decore-color: #000028;
+  --page-bc-color: #000028;
+  --content-title-color: #ff0070;
+  --title-shadow-color: #ff0070;
+  --content-color: #ff0070;
+  --content-sc-tl-cr: #ff0070;
+  --content-decor-color: #ff0070;
+  --content-button-color: #ff0070;
+  --bc-text-color: #ff0070;
+  --content-text-color: #f1b2ce;
+  --button-hover: rgba(255 0 112 / 0.4);
+  --image-block-1: clamp(192px, -0.75rem + 26.5625vw, 260px);
+  --image-block-2: clamp(441px, -1.3125rem + 60.1563vw, 595px);
+  --image-block-3: clamp(568px, -2rem + 78.125vw, 768px);
+  --image-block-4: clamp(230px, -1.5625rem + 33.2031vw, 315px);
+  --image-block-5: clamp(318px, -0.75rem + 42.9688vw, 428px);
+  --section__content-images-gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+  :root {
+    --font-size-header-footer-title: clamp(116px, 7.0115rem + 1.0178vw, 120px);
+    --body-content-margin: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+    --section-content-margin-bottom: clamp(50px, 1.3359rem + 7.6336vw, 80px);
+    --section-images-margin-bottom: clamp(40px, 1.3073rem + 5.0891vw, 60p);
+    --body-content-margin-top: clamp(75px, -2.2901rem + 29.771vw, 193px);
+    --header-nav-margin-bottom: clamp(65px, -2.3783rem + 27.4809vw, 173px);
+    --header-container-text-size: clamp(355px, 21.6508rem + 2.2901vw, 364px);
+    --footer-content-margin: clamp(285px, 7.2567rem + 45.0382vw, 462px);
+    --section__content-images-gap: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+    --image-block-1: clamp(97px, 0.3969rem + 24.173vw, 192px);
+    --image-block-2: clamp(228px, 1.5472rem + 54.1985vw, 441px);
+    --image-block-3: clamp(289px, 1.4237rem + 70.9924vw, 568px);
+    --image-block-4: clamp(110px, -0.2815rem + 30.5344vw, 230px);
+    --image-block-5: clamp(158px, 0.333rem + 40.7125vw, 318px);
+  }
+}
