@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: url(../images/cover-image-dark.png) no-repeat center / cover;
   background-attachment: fixed;
-  background-color: var(--page-bc-color, #000028);
+  /* background-color: var(--page-bc-color, #000028); */
 }
 
 .header {
