@@ -4,7 +4,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: url(../images/cover-image-dark.png) no-repeat center / cover;
   background-attachment: fixed;
-  /* background-color: var(--page-bc-color, #000028); */
 }
 
 .header {
@@ -13,7 +12,21 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, max-content);
   margin: 0 auto;
-  block-size: 100vh;
+  min-block-size: 768px;
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    min-block-size: 1024px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .header {
+    min-block-size: 668px;
+  }
 }
 
 .decorated-zone::before {
@@ -23,8 +36,8 @@
   inset-block-start: var(--body-content-margin);
   inline-size: 25px;
   block-size: 25px;
-  border-top: 1px solid var(--content-decor-color, #ff0070);
-  border-right: 1px solid var(--content-decor-color, #ff0070);
+  border-top: 1px solid var(--content-color, #ff0070);
+  border-right: 1px solid var(--content-color, #ff0070);
 }
 
 .decorated-zone::after {
@@ -34,8 +47,8 @@
   inset-block-end: var(--body-content-margin);
   inline-size: 25px;
   block-size: 25px;
-  border-bottom: 1px solid var(--content-decor-color, #ff0070);
-  border-left: 1px solid var(--content-decor-color, #ff0070);
+  border-bottom: 1px solid var(--content-color, #ff0070);
+  border-left: 1px solid var(--content-color, #ff0070);
 }
 
 .header__theme-menu-list {
@@ -44,7 +57,7 @@
   gap: 10px;
   margin: var(--body-content-margin);
   margin-block-end: var(--header-nav-margin-bottom);
-  color: var(--content-button-color, #ff0070);
+  color: var(--content-color, #ff0070);
 }
 
 @media (max-width: 768px) {
@@ -115,8 +128,8 @@
   font-size: var(--font-size-header-footer-title);
   font-weight: bold;
   line-height: 82.5%;
-  color: var(--header-title-color, #db00ff);
-  text-shadow: 4px 4px 0 var(--title-shadow-color, #ff0070);
+  color: var(--body-title, #db00ff);
+  text-shadow: 4px 4px 0 var(--title-shadow, #ff0070);
 }
 
 @media (max-width: 768px) {
@@ -140,13 +153,13 @@
   margin-inline-end: var(--body-content-margin);
   margin-block-end: 135px;
   font-weight: bold;
-  color: var(--text-decore-color, #000028);
+  color: var(--content-text, #000028);
 }
 
 @media (max-width: 768px) {
 
   .header__text {
-    /* margin-block-end: 183px; */
+    margin-block-end: 183px;
   }
 }
 
@@ -158,7 +171,7 @@
 }
 
 .content__text-decor {
-  background-color: var(--bc-text-color, #ff0070);
+  background-color: var(--decore-text, #ff0070);
 }
 
 .main {
@@ -193,26 +206,23 @@
 }
 
 .section__content-title {
+  max-inline-size: 315px;
   font-weight: bold;
   font-size: 18px;
-  color: var(--content-sc-tl-cr, #ff0070);
-}
-
-.section__content-title br:first-of-type {
-  display: none;
+  color: var(--content-color, #ff0070);
 }
 
 @media (max-width: 768px) {
 
-  .section__content-title br:first-of-type {
-    display: block;
+  .section__content-title  {
+    max-inline-size: 236px;
   }
 }
 
 @media (max-width: 375px) {
 
-  .section__content-title br:first-of-type {
-    display: none;
+  .section__content-title {
+    max-inline-size: 350px;
   }
 }
 
@@ -243,12 +253,16 @@
 
 .section__content-container-title {
   font-size: 18px;
-  color: var(--text-decore-color, #000028);
+  color: var(--content-text, #000028);
 }
 
 .section__content-container-text {
   margin-block-start: 10px;
-  color: var(--content-text-color, #f1b2ce);
+  color: var(--text-paragraph, #f1b2ce);
+}
+
+.content-link {
+  text-shadow: 2px 2px 0 var(--decore-text, #ff0070);
 }
 
 .content-link:hover {
@@ -261,10 +275,6 @@
 
 .content-link:focus-visible {
   outline: 1px solid currentColor;
-}
-
-.text__link-decor {
-  text-shadow: 2px 2px 0 var(--content-title-color, #ff0070);
 }
 
 .text-normal {
@@ -365,6 +375,6 @@
   font-size: var(--font-size-header-footer-title);
   font-weight: bold;
   line-height: 82.5%;
-  color: var(--footer-title-color);
+  color: var(--body-title, #DB00FF);
   text-shadow: 2px 2px 0 var(--title-shadow-color, #ff0070);
 }

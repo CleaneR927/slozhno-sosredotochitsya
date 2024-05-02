@@ -5,16 +5,12 @@
 */
 
 .theme_light {
-  --header-title-color: #ff8dcb;
-  --footer-title-color: #ff8dcb;
-  --text-decore-color: #353430;
-  --content-title-color: #ff8dcb;
-  --title-shadow-color: #ff0070;
-  --content-sc-tl-cr: #353430;
-  --content-decor-color: #353430;
-  --content-button-color: #353430;
-  --bc-text-color: #FF8DCB;
-  --content-text-color: #353430;
+  --body-title: #ff8dcb;
+  --decore-text: #ff8dcb;
+  --title-shadow: #ff0070;
+  --text-paragraph: #353430;
+  --content-color: #353430;
+  --content-text: #353430;
   --button-hover: rgba(50 49 45 / 0.4);
 }
 
@@ -33,16 +29,14 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-    --header-title-color: #ff8dcb;
-    --footer-title-color: #ff8dcb;
-    --text-decore-color: #353430;
-    --content-title-color: #ff8dcb;
-    --title-shadow-color: #ff0070;
-    --content-sc-tl-cr: #353430;
-    --content-decor-color: #353430;
+    --body-title: #ff8dcb;
+    --decore-text: #ff8dcb;
+    --title-shadow: #ff0070;
+    --text-paragraph: #353430;
+    --content-color: #353430;
+    --content-sc-tl: #353430;
     --content-button-color: #353430;
-    --bc-text-color: #FF8DCB;
-    --content-text-color: #353430;
+    --content-text: #353430;
     --button-hover: rgba(50 49 45 / 0.4);
   }
 
