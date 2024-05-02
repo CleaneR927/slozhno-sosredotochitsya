@@ -214,7 +214,7 @@
 
 @media (max-width: 768px) {
 
-  .section__content-title  {
+  .section__content-title {
     max-inline-size: 236px;
   }
 }
@@ -375,6 +375,6 @@
   font-size: var(--font-size-header-footer-title);
   font-weight: bold;
   line-height: 82.5%;
-  color: var(--body-title, #DB00FF);
+  color: var(--body-title, #db00ff);
   text-shadow: 2px 2px 0 var(--title-shadow-color, #ff0070);
 }

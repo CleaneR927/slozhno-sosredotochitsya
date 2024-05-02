@@ -4,11 +4,7 @@
 */
 
 :root {
-  --font-size-header-footer-title: clamp(
-    7.5rem,
-    0.5625rem + 14.4531vw,
-    9.8125rem
-  );
+  --font-size-header-footer-title: clamp(116px, 0.5625rem + 14.4531vw, 157px);
   --body-content-margin: 20px;
   --section-content-margin-bottom: 80px;
   --section-images-margin-bottom: 60px;
