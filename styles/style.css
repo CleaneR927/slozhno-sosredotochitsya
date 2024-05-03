@@ -251,7 +251,14 @@
   }
 }
 
+.gap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .section__content-container-title {
+  block-size: min-content;
   font-size: 18px;
   color: var(--content-text, #000028);
 }
